@@ -2,8 +2,8 @@ Module.register("MMM-Withings2",{
 
   // Default module config.
   defaults: {
-    units: 'metric',
-    userName: 'MagicMirror',
+    metricUnits: false, // false for Imperial
+    user: 'MagicMirror',
     clientId: '',
     clientSecret: '',
     redirectUri: '',
@@ -31,7 +31,7 @@ Module.register("MMM-Withings2",{
     var wrapper = document.createElement("div");
 
     var summary = document.createElement("div");
-    summary.innerHTML = "Health Data For " + this.config.userName;
+    summary.innerHTML = this.config.user;
     summary.className = "dimmed light small";
     wrapper.appendChild(summary);
 
