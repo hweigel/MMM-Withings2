@@ -8,10 +8,11 @@ var configFilename = path.resolve(__dirname + filename);
 const KG_TO_LBS = 2.2046;
 
 const metricToImperialMap = {
-  'kg': 'lbs',
+  //forcing weight unit to kg, as it keeps insisting on using "lbs" as axis label 
+  'kg': 'kg',
   'celcius': 'fahrenheit',
   'percent': 'percent',
-  'meter': 'inches',
+  'm': 'inch',
   'mmHg': 'mmHg',
   'm/s': 'm/s'
 }
@@ -118,7 +119,7 @@ module.exports = NodeHelper.create({
   convertData: function (meas) {
     var self = this;
     var value = meas.value * Math.pow(10, meas.unit);
-    if (self.units == 'imperial')
+    if (!self.units)
     {
       switch(measInfo[measTypeMap[meas.type]].si_unit) {
         case 'kg':
