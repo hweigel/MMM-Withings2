@@ -2,6 +2,8 @@
 
 Forked because self.baseApi changed from 'account.health.nokia.com' to 'account.withings.com' as advised by @fnsign
 
+For some reason it defaults to "lbs" regardless of the weight unit. So, whatever you configure, it'll keep showing "kg".
+
 # Module: MMM-withings
 The `MMM-withings` module is an extension for [MagicMirror](https://github.com/MichMich/MagicMirror). It provides a way to display data from the Withings Health API in HTML5 plots using Chart.js
 
@@ -71,7 +73,7 @@ The following properties can be configured:
 
 | Option | Description
 | ------ | -----------
-| `units` | Units to display<br><br> **Default value:** `config.units`
+| `metricUnits` | Units to display<br><br> **Default value:** `true`
 | `userName` | Name of user<br><br> **Default value:** `MagicMirror`
 | `clientId` | Client Id from step 3<br><br> **Default value:** ``
 | `clientSecret` | Consumer Secret from step 3<br><br> **Default value:** ``
