@@ -1,6 +1,6 @@
 # Disclaimer
 
-Forked because self.baseApi changed from 'account.health.nokia.com' to 'account.withings.com';
+Forked because self.baseApi changed from 'account.health.nokia.com' to 'account.withings.com' as advised by @fnsign
 
 # Module: MMM-withings
 The `MMM-withings` module is an extension for [MagicMirror](https://github.com/MichMich/MagicMirror). It provides a way to display data from the Withings Health API in HTML5 plots using Chart.js
@@ -31,7 +31,7 @@ The following steps are necessary to use this module:
 ````
 4. Once you have a client ID and consumer secret created, create and navigate to the following website
 ````url
-https://account.health.nokia.com/oauth2_user/authorize2?response_type=code&redirect_uri=https://example.com&scope=user.info,user.metrics,user.activity&state=1&client_id=<your_client_id>
+https://account.withings.com/oauth2_user/authorize2?response_type=code&redirect_uri=https://example.com&scope=user.info,user.metrics,user.activity&state=1&client_id=
 ````
 5. Login with your account credentials
 6. Allow this app
