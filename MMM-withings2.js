@@ -2,7 +2,7 @@ Module.register("MMM-withings2",{
 
   // Default module config.
   defaults: {
-    units: config.units,
+    units: 'metric',
     userName: 'MagicMirror',
     clientId: '',
     clientSecret: '',
