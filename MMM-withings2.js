@@ -1,4 +1,4 @@
-Module.register("MMM-withings",{
+Module.register("MMM-withings2",{
 
   // Default module config.
   defaults: {
