@@ -9,7 +9,7 @@ const KG_TO_LBS = 2.2046;
 
 const metricToImperialMap = {
   'kg': 'lbs',
-  'celcius': 'farenheight',
+  'celcius': 'fahrenheit',
   'percent': 'percent',
   'meter': 'inches',
   'mmHg': 'mmHg',
