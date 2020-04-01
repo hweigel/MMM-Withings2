@@ -255,7 +255,7 @@ module.exports = NodeHelper.create({
       self.clientId = config.clientId;
       self.clientSecret = config.clientSecret;
       self.redirectUri = config.redirectUri;
-      self.units = config.units;
+      self.units = config.metricUnits;
     }
 
     fs.readFile(configFilename, function read(err, data) {
