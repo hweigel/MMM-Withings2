@@ -2,7 +2,7 @@ Module.register("MMM-Withings2",{
 
   // Default module config.
   defaults: {
-    metricUnits: false, // false for Imperial
+    metricUnits: true, // false for Imperial
     user: 'MagicMirror',
     clientId: '',
     clientSecret: '',
